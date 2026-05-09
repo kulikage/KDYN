@@ -1,0 +1,54 @@
+<svg width="1600" height="360" viewBox="0 0 1600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <filter id="blurA" x="-20%" y="-40%" width="140%" height="180%">
+    <feGaussianBlur stdDeviation="10"/>
+  </filter>
+  <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge>
+      <feMergeNode in="b"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <path d="M-40 190 C 120 70 250 290 420 160 S 720 80 880 180 S 1190 290 1390 120 S 1620 145 1680 95"
+        stroke="#2DD8FF" stroke-width="54" stroke-linecap="round" opacity=".14" filter="url(#blurA)"/>
+  <path d="M-20 205 C 155 95 275 275 430 172 S 700 98 900 190 S 1170 265 1375 142 S 1570 150 1660 110"
+        stroke="#0B63CE" stroke-width="28" stroke-linecap="round" opacity=".18" filter="url(#blurA)"/>
+  <path d="M-20 205 C 155 95 275 275 430 172 S 700 98 900 190 S 1170 265 1375 142 S 1570 150 1660 110"
+        stroke="url(#line1)" stroke-width="5" stroke-linecap="round" opacity=".78" filter="url(#glow)"/>
+  <path d="M-60 170 C 120 210 230 130 390 205 S 705 270 835 135 S 1135 62 1320 188 S 1510 265 1660 150"
+        stroke="url(#line2)" stroke-width="4" stroke-linecap="round" opacity=".62" filter="url(#glow)"/>
+  <path d="M-20 245 C 140 135 260 205 390 205 S 650 115 825 205 S 1050 300 1260 190 S 1460 70 1630 210"
+        stroke="url(#line3)" stroke-width="3" stroke-linecap="round" opacity=".45" filter="url(#glow)"/>
+  <path d="M0 125 C 190 80 290 175 430 112 S 680 55 825 120 S 1045 222 1220 105 S 1460 65 1600 140"
+        stroke="#8B8CFF" stroke-width="2.5" stroke-linecap="round" opacity=".34"/>
+
+  <g opacity=".45" filter="url(#glow)">
+    <circle cx="160" cy="172" r="3" fill="#EFFFFF"/>
+    <circle cx="428" cy="172" r="4" fill="#EFFFFF"/>
+    <circle cx="742" cy="142" r="3" fill="#EFFFFF"/>
+    <circle cx="1015" cy="226" r="3" fill="#EFFFFF"/>
+    <circle cx="1318" cy="151" r="4" fill="#EFFFFF"/>
+    <circle cx="1460" cy="92" r="2.5" fill="#EFFFFF"/>
+  </g>
+
+  <defs>
+    <linearGradient id="line1" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#30D7FF"/>
+      <stop offset=".35" stop-color="#0B63CE"/>
+      <stop offset=".68" stop-color="#EFFFFF"/>
+      <stop offset="1" stop-color="#7F7CFF"/>
+    </linearGradient>
+    <linearGradient id="line2" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFFFFF"/>
+      <stop offset=".42" stop-color="#34D8FF"/>
+      <stop offset=".72" stop-color="#0B63CE"/>
+      <stop offset="1" stop-color="#EFFFFF"/>
+    </linearGradient>
+    <linearGradient id="line3" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B63CE"/>
+      <stop offset=".5" stop-color="#EFFFFF"/>
+      <stop offset="1" stop-color="#30D7FF"/>
+    </linearGradient>
+  </defs>
+</svg>
