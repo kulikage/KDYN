@@ -577,10 +577,27 @@ textarea {
   resize: vertical;
 }
 
-.form-note {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.78rem;
+.form-status {
+  min-height: 22px;
+  margin-top: 4px;
+  font-size: 0.92rem;
+  font-weight: 750;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.form-status.success {
+  color: #0b63ce;
+}
+
+.form-status.error {
+  color: #dc2626;
+}
+
+.contact-form button:disabled {
+  opacity: 0.72;
+  cursor: not-allowed;
+  transform: none;
 }
 
 code {
