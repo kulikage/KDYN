@@ -19,3 +19,47 @@ if (toggle && navLinks) {
     });
   });
 }
+
+/* Contact form: Formspree AJAX submit */
+const form = document.getElementById("contactForm");
+const status = document.getElementById("formStatus");
+const sendBtn = document.getElementById("sendBtn");
+
+if (form && status && sendBtn) {
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const originalText = sendBtn.textContent;
+
+    sendBtn.textContent = "Sending...";
+    sendBtn.disabled = true;
+    status.textContent = "";
+    status.className = "form-status";
+
+    try {
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        status.textContent = "Thank you. Your message has been sent.";
+        status.className = "form-status success";
+        form.reset();
+      } else {
+        status.textContent = "Something went wrong. Please try again or email us directly.";
+        status.className = "form-status error";
+      }
+    } catch (error) {
+      status.textContent = "Network error. Please try again later.";
+      status.className = "form-status error";
+    }
+
+    sendBtn.textContent = originalText;
+    sendBtn.disabled = false;
+  });
+}
