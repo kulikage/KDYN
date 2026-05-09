@@ -70,8 +70,10 @@ img {
 }
 
 .brand-mark {
-  width: 44px;
-  height: 44px;
+  width: 46px;
+  height: auto;
+  max-height: 42px;
+  object-fit: contain;
 }
 
 .brand-text {
@@ -257,9 +259,11 @@ h1 {
 }
 
 .hero-card-logo {
-  width: 62px;
-  height: 62px;
-  margin-bottom: 22px;
+  width: 96px;
+  height: auto;
+  max-height: 78px;
+  object-fit: contain;
+  margin-bottom: 24px;
 }
 
 .hero-card h2 {
@@ -708,4 +712,23 @@ code {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+.card-wordmark {
+  margin-bottom: 14px;
+  font-family: "Michroma", "Orbitron", system-ui, sans-serif;
+  font-size: 1.18rem;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #061b55;
+}
+
+.card-wordmark small {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-size: 0.62em;
+  letter-spacing: 0.12em;
+  color: #0b63ce;
 }
