@@ -222,24 +222,29 @@
         </div>
 
         <form class="contact-form" action="https://formspree.io/f/xzdokprv" method="POST">
-          <label>
-            Name
-            <input type="text" name="name" autocomplete="name" required />
-          </label>
-          <label>
-            Organization
-            <input type="text" name="organization" autocomplete="organization" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" autocomplete="email" required />
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button class="button primary" type="submit">Send Message</button>
-          
+           <label>
+              Name
+           <input type="text" name="name" autocomplete="name" required />
+           </label>
+
+           <label>
+              Organization
+           <input type="text" name="organization" autocomplete="organization" />
+           </label>
+
+           <label>
+              Email
+           <input type="email" name="email" autocomplete="email" required />
+           </label>
+
+           <label>
+               Message
+           <textarea name="message" rows="5" required></textarea>
+           </label>
+
+           <button class="button primary" id="sendBtn" type="submit">Send Message</button>
+
+           <div id="formStatus" class="form-status" aria-live="polite"></div>
         </form>
       </div>
     </section>
