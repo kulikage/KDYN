@@ -1,35 +1,37 @@
-# Kulicage Dynamics LLC — KDyn.tech landing page
+# Kulicage Dynamics LLC — kdyn.tech
 
 Static GitHub Pages site for Kulicage Dynamics LLC.
 
 ## Files
 
 - `index.html` — main page
+- `404.html` — custom "page not found" page (GitHub Pages picks it up automatically)
 - `styles.css` — visual style and layout
-- `script.js` — mobile menu and current year
-- `assets/logo.svg` — logo
-- `assets/favicon.svg` — browser icon
-- `assets/plasma-header.svg` — plasma accent background
-
-## GitHub Pages setup
-
-1. Create a new repository.
-2. Upload all files from this folder to the repository root.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, select:
-   - Source: **Deploy from a branch**
-   - Branch: **main**
-   - Folder: **/root**
-5. Add the custom domain: `www.kdyn.tech`
-6. Configure DNS at your domain provider.
-7. Enable **Enforce HTTPS** when GitHub allows it.
+- `script.js` — mobile menu, current year, contact form submit
+- `favicon.ico` — browser icon (16/32/48 px)
+- `robots.txt`, `sitemap.xml` — search engine files
+- `CNAME` — custom domain (`kdyn.tech`)
+- `assets/logo.svg` — logo mark (vector, used in the header)
+- `assets/logo.png` — logo mark 512 px (structured data / fallback)
+- `assets/favicon.svg` — browser icon (vector)
+- `assets/favicon.png` — PNG icon 192 × 192
+- `assets/apple-touch-icon.png` — iOS home-screen icon (180 × 180)
+- `assets/og-image.jpg` — link preview image for LinkedIn, Slack, Telegram, email (1200 × 630)
+- `assets/plasma-header.svg` — decorative plasma lines
 
 ## Contact form
 
-The contact form currently uses a placeholder Formspree endpoint:
+The form posts to Formspree (`https://formspree.io/f/xzdokprv`) via `script.js`.
+The hidden `_gotcha` field is a spam honeypot; `_subject` sets the email subject.
 
-```html
-https://formspree.io/f/YOUR_FORM_ID
-```
+## Content TODO (see HTML comments)
 
-Replace `YOUR_FORM_ID` with a real Formspree form ID, or replace the form with a direct email link.
+- Founder photo: `assets/founder.jpg`, then swap the initials block in `#founder`.
+- Work photos: `assets/work-*.jpg` (commented `<img>` tags in `#work`).
+- Verification chart: `assets/verification-chart.png` (commented `<img>` in `#program`).
+- SAM.gov UEI / CAGE / NAICS in `#company`.
+- Intellectual property line — only after confirming applicant/owner and status of each filing.
+
+## GitHub Pages
+
+Settings → Pages: deploy from branch `main`, folder `/ (root)`, custom domain `kdyn.tech`, **Enforce HTTPS** on.
