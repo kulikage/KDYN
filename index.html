@@ -3,248 +3,527 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kulicage Dynamics LLC | Advanced Energy Conversion & Aerospace R&D</title>
-  <meta name="description" content="Kulicage Dynamics LLC is a North Carolina-based deep-tech R&D company focused on advanced energy conversion, plasma-assisted systems, aerospace-oriented engineering, and simulation-driven prototyping." />
+  <title>Kulicage Dynamics | TorrideX Thermionic Energy Conversion R&amp;D</title>
+  <meta name="description" content="Kulicage Dynamics LLC (Charlotte, NC) develops TorrideX, a plasma-assisted thermionic converter for direct heat-to-electricity conversion. Simulation-first R&amp;D, NVIDIA Inception member." />
+  <link rel="canonical" href="https://kdyn.tech/" />
   <meta name="theme-color" content="#0b63ce" />
-  <meta property="og:title" content="Kulicage Dynamics LLC" />
-  <meta property="og:description" content="Advanced Energy Conversion & Aerospace R&D" />
+
   <meta property="og:type" content="website" />
-  <link rel="icon" href="assets/favicon.png" type="image/svg+xml" />
+  <meta property="og:site_name" content="Kulicage Dynamics" />
+  <meta property="og:url" content="https://kdyn.tech/" />
+  <meta property="og:title" content="Kulicage Dynamics | TorrideX thermionic energy conversion" />
+  <meta property="og:description" content="Plasma-assisted thermionic conversion of heat into electricity. Simulation-first R&amp;D from Charlotte, North Carolina." />
+  <meta property="og:image" content="https://kdyn.tech/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Kulicage Dynamics: TorrideX thermionic energy conversion R&amp;D" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Michroma&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kulicage Dynamics",
+    "legalName": "Kulicage Dynamics LLC",
+    "url": "https://kdyn.tech/",
+    "logo": "https://kdyn.tech/assets/logo.png",
+    "email": "nikolai@kdyn.tech",
+    "foundingDate": "2024",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Charlotte",
+      "addressRegion": "NC",
+      "addressCountry": "US"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Nikolai Kulikov",
+      "jobTitle": "Founder & CTO",
+      "sameAs": ["https://www.linkedin.com/in/kulicage/"]
+    }
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header" id="top">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="Kulicage Dynamics home">
-        <img src="assets/logo.png" alt="" class="brand-mark" />
-        <span class="brand-text">
-          <span class="brand-name">Kulicage Dynamics</span>
-        </span>
+        <img src="assets/logo.svg" alt="" class="brand-mark" width="46" height="31" />
+        <span class="brand-name">Kulicage Dynamics</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav-links" aria-label="Main navigation">
+      <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+        <a href="#program">TorrideX</a>
+        <a href="#work">Work</a>
         <a href="#capabilities">Capabilities</a>
-        <a href="#program">R&D Program</a>
         <a href="#founder">Founder</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
+    <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="plasma plasma-top" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-content">
-          <p class="eyebrow">Charlotte, North Carolina · Deep-Tech R&D</p>
-          <h1>Advanced Energy Conversion & Aerospace R&D</h1>
+          <p class="eyebrow">Charlotte, NC · Energy&nbsp;conversion&nbsp;R&amp;D</p>
+          <h1>Turning heat directly into electricity.</h1>
           <p class="hero-lead">
-            Kulicage Dynamics LLC develops advanced energy conversion architectures
-            for autonomous platforms, remote power systems, and aerospace applications.
+            Kulicage Dynamics is developing <strong>TorrideX</strong>, a plasma-assisted
+            thermionic converter that turns heat directly into DC power with no moving parts.
+            Our work is simulation-first: models are verified against analytical references
+            before they inform hardware decisions.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#contact">Contact Us</a>
-            <a class="button secondary" href="#capabilities">View Capabilities</a>
+            <a class="button primary" href="#program">Explore TorrideX</a>
+            <a class="button secondary" href="#contact">Partner with us</a>
           </div>
-          <div class="trust-row" aria-label="Company highlights">
-            <span>NVIDIA Inception Member</span>
-            <span>Patent-backed R&D</span>
-            <span>U.S. Legal Entity</span>
-          </div>
+          <ul class="trust-row" aria-label="Company highlights">
+            <li>NVIDIA Inception member</li>
+            <li>Founded 2024 · Charlotte, NC</li>
+          </ul>
         </div>
 
-        <aside class="hero-card" aria-label="Company summary">
-          <div class="card-glow"></div>
-          <img src="assets/logo.png" alt="" class="hero-card-logo" />
-          <h2 class="card-wordmark">
-          <span>Kulicage Dynamics</span>
-          <small>LLC</small>
-          </h2>
-          <p>
-            Proprietary engineering development focused on compact, resilient,
-            and long-duration power concepts.
-          </p>
-          <dl>
-            <div>
-              <dt>Focus</dt>
-              <dd>Energy Conversion</dd>
-            </div>
-            <div>
-              <dt>Domain</dt>
-              <dd>Aerospace & Remote Power</dd>
-            </div>
-            <div>
-              <dt>Website</dt>
-              <dd>www.kdyn.tech</dd>
-            </div>
-          </dl>
-        </aside>
+        <figure class="hero-visual">
+          <p class="visual-label">TorrideX · operating principle</p>
+          <svg class="principle" viewBox="0 0 520 360" role="img" aria-labelledby="principle-title principle-desc">
+            <title id="principle-title">Thermionic converter operating principle</title>
+            <desc id="principle-desc">Heat enters a hot emitter, which releases electrons. Electrons cross a plasma-filled gap to a cooler collector and return through an external load, producing DC power. Remaining heat is rejected from the collector.</desc>
+            <defs>
+              <linearGradient id="g-hot" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffb347" />
+                <stop offset="1" stop-color="#ff5a36" />
+              </linearGradient>
+              <linearGradient id="g-cold" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#30d7ff" />
+                <stop offset="1" stop-color="#0b63ce" />
+              </linearGradient>
+              <radialGradient id="g-plasma" cx="0.5" cy="0.5" r="0.5">
+                <stop offset="0" stop-color="#7f7cff" stop-opacity="0.38" />
+                <stop offset="0.6" stop-color="#30d7ff" stop-opacity="0.16" />
+                <stop offset="1" stop-color="#30d7ff" stop-opacity="0" />
+              </radialGradient>
+              <marker id="arrow-hot" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0 L10 5 L0 10 z" fill="#ff7a3d" />
+              </marker>
+              <marker id="arrow-cold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0 L10 5 L0 10 z" fill="#1d8fe6" />
+              </marker>
+              <marker id="arrow-wire" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+                <path d="M0 0 L10 5 L0 10 z" fill="#0b1220" />
+              </marker>
+            </defs>
+
+            <!-- external circuit -->
+            <path d="M357 112 V58 H300" class="wire" />
+            <path d="M220 58 H163 V112" class="wire" />
+            <path d="M300 58 l-6 -10 l-10 20 l-10 -20 l-10 20 l-10 -20 l-10 20 l-10 -20 l-10 20 l-4 -10" class="wire resistor" />
+            <path d="M338 58 H330" class="wire" marker-end="url(#arrow-wire)" />
+            <text x="260" y="30" class="svg-label" text-anchor="middle">LOAD · DC OUT</text>
+            <text x="330" y="80" class="svg-note" text-anchor="middle">e⁻</text>
+
+            <!-- plasma gap -->
+            <ellipse cx="260" cy="202" rx="96" ry="92" fill="url(#g-plasma)" />
+
+            <!-- emitter / collector -->
+            <rect x="150" y="112" width="26" height="180" rx="6" fill="url(#g-hot)" />
+            <rect x="344" y="112" width="26" height="180" rx="6" fill="url(#g-cold)" />
+
+            <!-- ions (space-charge neutralization) -->
+            <g class="ions">
+              <circle cx="230" cy="150" r="6" /><text x="230" y="154" text-anchor="middle">+</text>
+              <circle cx="292" cy="236" r="6" /><text x="292" y="240" text-anchor="middle">+</text>
+              <circle cx="250" cy="262" r="6" /><text x="250" y="266" text-anchor="middle">+</text>
+              <circle cx="300" cy="168" r="6" /><text x="300" y="172" text-anchor="middle">+</text>
+            </g>
+
+            <!-- electrons crossing the gap -->
+            <g class="electrons">
+              <circle class="e" cx="186" cy="140" r="4" style="animation-delay:-0.2s" />
+              <circle class="e" cx="186" cy="176" r="4" style="animation-delay:-1.4s" />
+              <circle class="e" cx="186" cy="206" r="4" style="animation-delay:-0.8s" />
+              <circle class="e" cx="186" cy="238" r="4" style="animation-delay:-2.0s" />
+              <circle class="e" cx="186" cy="268" r="4" style="animation-delay:-1.1s" />
+              <circle class="e" cx="186" cy="190" r="4" style="animation-delay:-2.3s" />
+            </g>
+
+            <!-- heat in -->
+            <g class="heat-in">
+              <path d="M66 150 q10 -8 20 0 t20 0 t20 0" marker-end="url(#arrow-hot)" />
+              <path d="M66 202 q10 -8 20 0 t20 0 t20 0" marker-end="url(#arrow-hot)" />
+              <path d="M66 254 q10 -8 20 0 t20 0 t20 0" marker-end="url(#arrow-hot)" />
+            </g>
+            <!-- heat out -->
+            <g class="heat-out">
+              <path d="M394 150 q10 -8 20 0 t20 0 t20 0" marker-end="url(#arrow-cold)" />
+              <path d="M394 202 q10 -8 20 0 t20 0 t20 0" marker-end="url(#arrow-cold)" />
+              <path d="M394 254 q10 -8 20 0 t20 0 t20 0" marker-end="url(#arrow-cold)" />
+            </g>
+
+            <!-- labels -->
+            <text x="96" y="296" class="svg-label hot" text-anchor="middle">HEAT IN</text>
+            <text x="424" y="296" class="svg-label cold" text-anchor="middle">HEAT OUT</text>
+            <text x="163" y="322" class="svg-label hot" text-anchor="middle">EMITTER</text>
+            <text x="260" y="322" class="svg-label" text-anchor="middle">PLASMA GAP</text>
+            <text x="357" y="322" class="svg-label cold" text-anchor="middle">COLLECTOR</text>
+            <text x="260" y="344" class="svg-note" text-anchor="middle">electrons cross the gap · ions neutralize space charge</text>
+          </svg>
+          <figcaption>Simplified schematic, not to scale. Design details are shared under NDA.</figcaption>
+        </figure>
       </div>
     </section>
 
+    <!-- ============ COMPANY ============ -->
     <section class="section about" id="about">
       <div class="container split">
         <div>
-          <p class="section-label">Company Overview</p>
-          <h2>Stealth deep-tech development with practical engineering execution.</h2>
+          <p class="section-label">The company</p>
+          <h2>Energy R&amp;D, backed by production engineering.</h2>
         </div>
         <div class="section-copy">
           <p>
-            Kulicage Dynamics LLC is a North Carolina-based deep-tech R&D company
-            focused on advanced energy conversion, plasma-assisted systems, and
-            aerospace-oriented engineering solutions.
+            Kulicage Dynamics LLC is an R&amp;D company in Charlotte, North Carolina, founded in 2024.
+            Its core program, TorrideX, investigates plasma-assisted thermionic conversion of heat
+            into electricity for compact, long-duration power.
           </p>
           <p>
-            The company develops early-stage technologies for autonomous power,
-            remote energy systems, and high-reliability technical applications
-            where compactness, durability, and long operating life are critical.
+            The company is founder-led and builds on more than a decade of hands-on mechanical,
+            hydraulic and production engineering, including taking a product from design
+            to series production and sales.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="section capabilities" id="capabilities">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-label">Core Capabilities</p>
-          <h2>Engineering capabilities for early-stage advanced power systems.</h2>
-        </div>
-
-        <div class="cards">
-          <article class="cap-card">
-            <span class="icon-dot"></span>
-            <h3>Advanced Energy Conversion</h3>
-            <p>Compact power architectures for autonomous platforms, remote systems, and high-value technical applications.</p>
-          </article>
-
-          <article class="cap-card">
-            <span class="icon-dot"></span>
-            <h3>Plasma-Assisted Systems</h3>
-            <p>Concept development for plasma-enabled energy conversion and aerospace-oriented engineering use cases.</p>
-          </article>
-
-          <article class="cap-card">
-            <span class="icon-dot"></span>
-            <h3>Thermal & Mechanical Design</h3>
-            <p>Mechanical architecture, CAD development, materials selection, thermal management, and prototype planning.</p>
-          </article>
-
-          <article class="cap-card">
-            <span class="icon-dot"></span>
-            <h3>Simulation-Driven Prototyping</h3>
-            <p>Engineering workflows supported by modeling, analysis, documentation, and iterative design refinement.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
+    <!-- ============ TORRIDEX PROGRAM ============ -->
     <section class="section program" id="program">
       <div class="container program-panel">
         <div class="plasma plasma-panel" aria-hidden="true"></div>
         <div class="program-content">
-          <p class="section-label">Active R&D Program</p>
-          <h2>Proprietary advanced energy conversion platform.</h2>
-          <p>
-            Kulicage Dynamics is developing a proprietary advanced energy conversion
-            platform intended for compact, long-duration, and autonomous power applications.
-            The program is supported by ongoing patent work and early-stage prototype planning.
-          </p>
+          <p class="section-label">R&amp;D program</p>
+          <h2>TorrideX: plasma-assisted thermionic conversion</h2>
+
+          <div class="program-grid">
+            <div class="program-text">
+              <h3>How it works</h3>
+              <p>
+                A heated emitter releases electrons that cross a narrow gap to a cooler collector,
+                producing DC power directly from heat. A low-pressure plasma in the gap supports
+                electron transport by neutralizing space charge, the effect that otherwise limits current.
+              </p>
+              <h3>Where we are</h3>
+              <p>
+                Modeling and numerical verification: thermal, electrostatic and particle-transport
+                models, tested for physical applicability before they are used to size hardware.
+              </p>
+              <h3>Next milestone</h3>
+              <p>
+                A controlled, electrically heated, non-radioactive bench experiment.
+              </p>
+            </div>
+
+            <div class="verify">
+              <h3>How we verify our models</h3>
+              <ul class="check-list">
+                <li>Numerical results compared with analytical reference solutions</li>
+                <li>CPU and GPU implementations cross-checked, including an NVIDIA Warp benchmark</li>
+                <li>Grid-convergence and conservation-balance checks</li>
+                <li>Reproducibility of selected runs</li>
+                <li>Explicit tests of where model assumptions stop holding</li>
+              </ul>
+              <!-- TODO: add a verification chart here (e.g. Warp CPU/GPU vs analytical reference):
+              <img src="assets/verification-chart.png" alt="..." class="verify-chart" loading="lazy" /> -->
+            </div>
+          </div>
+
+          <div class="tracks">
+            <article class="track">
+              <div class="track-head">
+                <h3>Small</h3>
+                <span class="status status-active">Active</span>
+              </div>
+              <p>Primary track: first hardware validation of the converter.</p>
+            </article>
+            <article class="track">
+              <div class="track-head">
+                <h3>Power</h3>
+                <span class="status">Future</span>
+              </div>
+              <p>Scaling the shared converter module to higher power.</p>
+            </article>
+            <article class="track">
+              <div class="track-head">
+                <h3>Waste</h3>
+                <span class="status">Exploratory</span>
+              </div>
+              <p>Long-term research on residual heat from storage containers at licensed facilities. Feasibility depends on real thermal conditions.</p>
+            </article>
+          </div>
+
           <p class="nda-note">
-            Additional technical details are available under NDA or through formal partner discussions.
+            Geometry, materials and design details are available under NDA or through formal partner discussions.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="section work" id="work">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Founder's track record</p>
+          <h2>Selected engineering work</h2>
+          <p class="section-intro">
+            Projects by founder Nikolai Kulikov. Each card notes the project context and his role.
+          </p>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card">
+            <!-- <img src="assets/work-seals.jpg" alt="..." class="work-media" loading="lazy" /> -->
+            <p class="work-tag">Product development · Production</p>
+            <h3>Commercial sealing products</h3>
+            <p>
+              Took a sealing product from an identified field problem through design, prototyping
+              and testing to production setup and customer feedback.
+            </p>
+            <div class="work-stats">
+              <div><strong>≈2,600</strong><span>kits sold</span></div>
+              <div><strong>13,000+</strong><span>components</span></div>
+            </div>
+            <p class="work-role">Role: end-to-end, from design to sales</p>
+            <!-- TODO: state under which brand/business these were sold (not Kulicage Dynamics sales) -->
+          </article>
+
+          <article class="work-card">
+            <!-- <img src="assets/work-skyforge.jpg" alt="..." class="work-media" loading="lazy" /> -->
+            <p class="work-tag">Hardware R&amp;D</p>
+            <h3>SkyForge</h3>
+            <p class="work-badge">Hello Tomorrow Deep Tech Pioneer, 2024</p>
+            <p>
+              Ozone generator and injection system: prototype development, airflow analysis
+              and integration constraints.
+            </p>
+            <p class="work-role">Role: mechanical development</p>
+          </article>
+
+          <article class="work-card">
+            <!-- <img src="assets/work-hydraulics.jpg" alt="..." class="work-media" loading="lazy" /> -->
+            <p class="work-tag">Hydraulics · Robotics</p>
+            <h3>Heavy-duty hydraulics and remote platforms</h3>
+            <p>
+              Multi-stage hydraulic cylinders, highly loaded mechanisms and remotely operated
+              platforms for hazardous environments, with actuator and sensor integration.
+            </p>
+            <p class="work-role">Tools: SolidWorks · Inventor · AutoCAD</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAPABILITIES ============ -->
+    <section class="section capabilities" id="capabilities">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label">Capabilities</p>
+          <h2>From physics model to production drawing.</h2>
+        </div>
+
+        <div class="cards">
+          <article class="cap-card">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 3v18h18" /><path d="M6 16l4-5 3 3 6-8" /></svg>
+            </span>
+            <h3>Thermionic &amp; plasma modeling</h3>
+            <p>Thermal, electrostatic and particle-transport models with numerical verification and applicability checks.</p>
+            <p class="cap-tools">COMSOL · Python · NVIDIA Warp</p>
+          </article>
+
+          <article class="cap-card">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z" /><path d="M12 22V12" /><path d="M21 7l-9 5-9-5" /></svg>
+            </span>
+            <h3>Mechanical &amp; thermal design</h3>
+            <p>Mechanical architecture, CAD, materials selection and thermal management for prototype hardware.</p>
+            <p class="cap-tools">SolidWorks · Inventor · AutoCAD</p>
+          </article>
+
+          <article class="cap-card">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M9 3h6" /><path d="M10 3v6l-5.5 9.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-2.5L14 9V3" /><path d="M7.5 15h9" /></svg>
+            </span>
+            <h3>Prototyping &amp; testing</h3>
+            <p>Prototype planning, fabrication including additive manufacturing, test setup and design iteration.</p>
+          </article>
+
+          <article class="cap-card">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 21V10l6 4v-4l6 4V6l6 3v12z" /><path d="M3 21h18" /></svg>
+            </span>
+            <h3>Production support</h3>
+            <p>Engineering drawings, materials selection and manufacturing support, from prototype to series production.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOUNDER ============ -->
     <section class="section founder" id="founder">
       <div class="container founder-grid">
+        <div>
+        <p class="section-label">Founder</p>
         <div class="founder-card">
-          <div class="founder-initials">NK</div>
+          <!-- Replace the initials with a photo when available:
+          <img src="assets/founder.jpg" alt="Nikolai Kulikov" class="founder-photo" width="72" height="72" /> -->
+          <div class="founder-initials" aria-hidden="true">NK</div>
           <div>
             <h2>Nikolai Kulikov</h2>
-            <p>Founder & CTO</p>
+            <p>Founder &amp; CTO</p>
+            <a class="founder-link" href="https://www.linkedin.com/in/kulicage/" target="_blank" rel="noopener">LinkedIn ↗</a>
           </div>
+        </div>
         </div>
         <div class="section-copy">
           <p>
-            Kulicage Dynamics LLC was founded by Nikolai Kulikov, a mechanical engineer
-            and deep-tech developer with experience in plasma energy concepts, mechanical
-            systems, prototype development, additive manufacturing, and engineering documentation.
+            Nikolai Kulikov is a mechanical engineer with more than ten years of experience in
+            mechanical design, hydraulics, robotics and production support. He holds an engineering
+            degree from Volgograd State Technical University (2014).
           </p>
           <p>
-            His work focuses on turning complex physical concepts into practical engineering
-            architectures suitable for prototyping, testing, and future commercialization.
+            He has taken his own product from design to series production and sales, and has
+            engineered hardware ranging from multi-stage hydraulic actuators to remotely operated
+            platforms for hazardous environments.
           </p>
+          <p>
+            At Kulicage Dynamics he leads the TorrideX program, combining computational work
+            (COMSOL, Python, NVIDIA Warp) with hands-on mechanical design.
+          </p>
+          <!-- Optional line:
+          <p>He also designs and reviews engineering problems used to evaluate AI systems, checking physics, assumptions, calculations and feasibility.</p> -->
         </div>
       </div>
     </section>
 
-    <section class="section recognition" id="recognition">
+    <!-- ============ RECOGNITION & COMPANY DATA ============ -->
+    <section class="section recognition" id="company">
       <div class="container recognition-grid">
         <div>
-          <p class="section-label">Ecosystem & Recognition</p>
-          <h2>Built as a focused U.S.-based R&D company.</h2>
+          <p class="section-label">Recognition</p>
+          <h2>Programs and recognition</h2>
+          <ul class="recognition-list">
+            <li>
+              <strong>NVIDIA Inception</strong>
+              <span>Kulicage Dynamics LLC is a member of NVIDIA's program for startups.</span>
+            </li>
+            <li>
+              <strong>Hello Tomorrow Deep Tech Pioneer, 2024</strong>
+              <span>Awarded to the SkyForge project; Nikolai's role was mechanical development.</span>
+            </li>
+          </ul>
+          <!-- Intellectual property: add only after confirming applicant/owner and status of each filing, e.g.
+          <li><strong>Intellectual property</strong><span>Patent applications covering ... (status: ...)</span></li> -->
         </div>
-        <ul class="recognition-list">
-          <li>NVIDIA Inception Member</li>
-          <li>Patent-backed R&D activity</li>
-          <li>Founder-led engineering development</li>
-          <li>Charlotte, North Carolina, USA</li>
-        </ul>
+
+        <div class="company-data">
+          <p class="section-label">Company data</p>
+          <dl>
+            <div><dt>Legal name</dt><dd>Kulicage Dynamics LLC</dd></div>
+            <div><dt>Formerly</dt><dd>SynthoShield LLC</dd></div>
+            <div><dt>Founded</dt><dd>2024, North Carolina</dd></div>
+            <div><dt>Location</dt><dd>Charlotte, NC, USA</dd></div>
+            <div><dt>SAM.gov</dt><dd>Registered · UEI and CAGE on request</dd></div>
+            <!-- TODO: replace the line above with actual codes from SAM.gov, e.g.
+            <div><dt>UEI</dt><dd>XXXXXXXXXXXX</dd></div>
+            <div><dt>CAGE</dt><dd>XXXXX</dd></div>
+            <div><dt>NAICS</dt><dd>541715, 541330</dd></div> -->
+          </dl>
+        </div>
       </div>
     </section>
 
+    <!-- ============ CONTACT ============ -->
     <section class="section contact" id="contact">
       <div class="plasma plasma-bottom" aria-hidden="true"></div>
       <div class="container contact-grid">
         <div>
           <p class="section-label">Contact</p>
-          <h2>Contact Kulicage Dynamics</h2>
+          <h2>Work with Kulicage Dynamics</h2>
           <p class="contact-lead">
-            For partnerships, grants, technical discussions, or formal inquiries,
-            please contact the company directly.
+            We welcome inquiries from research partners, agencies and suppliers.
+            Current collaboration interests:
           </p>
+          <ul class="chips">
+            <li>Lab validation &amp; measurements</li>
+            <li>Prototype fabrication</li>
+            <li>Materials &amp; surface engineering</li>
+            <li>Thermal integration</li>
+          </ul>
 
           <div class="contact-lines">
             <p><strong>Kulicage Dynamics LLC</strong></p>
             <p>Charlotte, North Carolina, USA</p>
             <p>Email: <a href="mailto:nikolai@kdyn.tech">nikolai@kdyn.tech</a></p>
-            <p>Website: <a href="https://www.kdyn.tech">www.kdyn.tech</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/kulicage/" target="_blank" rel="noopener">Nikolai Kulikov</a></p>
           </div>
         </div>
 
         <form id="contactForm" class="contact-form" action="https://formspree.io/f/xzdokprv" method="POST">
-           <label>
-              Name
-           <input type="text" name="name" autocomplete="name" required />
-           </label>
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
 
-           <label>
-              Organization
-           <input type="text" name="organization" autocomplete="organization" />
-           </label>
+          <label>
+            Organization
+            <input type="text" name="organization" autocomplete="organization" />
+          </label>
 
-           <label>
-              Email
-           <input type="email" name="email" autocomplete="email" required />
-           </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
 
-           <label>
-               Message
-           <textarea name="message" rows="5" required></textarea>
-           </label>
+          <label>
+            Topic
+            <select name="topic">
+              <option>Partnership / collaboration</option>
+              <option>NDA technical briefing</option>
+              <option>Grants &amp; agencies</option>
+              <option>Other</option>
+            </select>
+          </label>
 
-           <button class="button primary" id="sendBtn" type="submit">Send Message</button>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
 
-           <div id="formStatus" class="form-status" aria-live="polite"></div>
+          <!-- spam honeypot (Formspree ignores submissions where this is filled) -->
+          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <input type="hidden" name="_subject" value="kdyn.tech inquiry" />
+
+          <button class="button primary" id="sendBtn" type="submit">Send message</button>
+          <p class="form-note">We use your details only to reply to your inquiry. Messages are delivered via Formspree.</p>
+
+          <div id="formStatus" class="form-status" aria-live="polite"></div>
         </form>
       </div>
     </section>
@@ -252,8 +531,12 @@
 
   <footer class="site-footer">
     <div class="container footer-row">
-      <p>© <span id="year"></span> Kulicage Dynamics LLC. All rights reserved.</p>
-      <a href="#top">Back to top</a>
+      <p>© <span id="year">2026</span> Kulicage Dynamics LLC · Charlotte, North Carolina</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="mailto:nikolai@kdyn.tech">Email</a>
+        <a href="https://www.linkedin.com/in/kulicage/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#top">Back to top</a>
+      </nav>
     </div>
   </footer>
 
