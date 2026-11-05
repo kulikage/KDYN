@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 764 512" width="764" height="512" role="img" aria-label="Kulicage Dynamics"><title>Kulicage Dynamics</title><defs>
+  <linearGradient id="kd-arm" gradientUnits="userSpaceOnUse" x1="0" y1="512" x2="360" y2="60">
+    <stop offset="0" stop-color="#000F44"/><stop offset="1" stop-color="#00236F"/></linearGradient>
+  <linearGradient id="kd-leg" gradientUnits="userSpaceOnUse" x1="210" y1="335" x2="390" y2="512">
+    <stop offset="0" stop-color="#001E67"/><stop offset="1" stop-color="#004CC4"/></linearGradient>
+  <linearGradient id="kd-d" gradientUnits="userSpaceOnUse" x1="330" y1="30" x2="764" y2="480">
+    <stop offset="0" stop-color="#0036A0"/><stop offset="0.5" stop-color="#0A7AF5"/><stop offset="1" stop-color="#00C3FF"/></linearGradient>
+</defs><g><path d="M0 0 L116 0 L116 189.52 L0 305.52 Z" fill="#02B1F0"/><path d="M0 342.29 L315.76 26.53 L400.62 111.38 L0 512 Z" fill="url(#kd-arm)"/><path d="M169.15 379.62 L254 294.77 L471.23 512 L301.52 512 Z" fill="url(#kd-leg)"/><path d="M326 0 L508 0 A256 256 0 0 1 508 512 L404 408 L496 408 A152 152 0 0 0 496 104 L430 104 Z" fill="url(#kd-d)"/></g></svg>
