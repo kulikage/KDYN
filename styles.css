@@ -1538,3 +1538,6 @@ textarea {
 .work-blueprint .bp-label { font-size: 22px; letter-spacing: 0.12em; fill: #9eeeff; }
 .work-blueprint .bp-dim { font-size: 15px; letter-spacing: 0.1em; fill: rgba(255, 255, 255, 0.85); }
 .work-blueprint .bp-note { font-size: 13px; letter-spacing: 0.1em; fill: rgba(255, 255, 255, 0.55); }
+
+.button:focus-visible,
+.nav-cta:focus-visible { outline: 2px solid currentColor; outline-offset: -5px; }
